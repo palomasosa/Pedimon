@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PedimonYa</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <div class="inicio">
+        <nav class="navbar">
+            <img src="./assets/pedimon-logo.png" alt="" class="logo">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Carrito </a></li>
+            </ul>
+        </nav>
+        <div id="cantidadCompras" class="cantidadCompras"></div>
+        <button id="carroCompras" class="carrito">
+            <img src="./pngwing.com (1).png" alt="">
+        </button>
+
+        <div id="sidebar" class="sidebar">
+            <button id="cerrarSidebar" class="cerrarSidebar">X</button>
+            <div class="nombreSidebar">
+                <h2>Carrito de compras</h2>
+            </div>
+            <div class="productosSeleccionados">
+                <p id="mensajeSinProductos">Aún no tienes productos en el carrito :(</p>
+                <p id="productos"></p>
+            </div>
+            <div class="finalizarCompra">
+                <div class="total">
+                    <p>Total: </p>
+                    <p id="totalAbonar">$0</p>
+                </div>
+                <div class="botonComprar">
+                    <button>COMPRAR</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="conteiner__inicio">
+            <div class="texto__inicio">
+                <img src="./assets/pedimon-text.png" alt="" class="nombre">
+                <p class="texto">
+                    Buscá tu Pokémon favorito y disfrutá de los beneficios de tener un bicho de estos en tu casa! Hay como cinco millones para coleccionar!
+                </p>
+                <a href="#lista"><button class="boton__atrapar">Los quiero atrapar</button></a>
+            </div>
+            <div class="containerImagen__inicio">
+                <img src="./assets/pikachu-hero.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="texto">
+            <h2>No te quedes sin tu pedi!</h2>
+            <p>Dale amiwito, no te podes quedar sin tu Pédimon, mira lo fácil que es...</p>
+        </div>
+        <div class="container__cards">
+            <div class="card">
+                <ion-icon name="water"></ion-icon>
+                <p>Elegí el pedi que vos querés de la lista de abajo (que por supuesto está)</p>
+            </div>
+            <div class="card">
+                <ion-icon name="flash"></ion-icon>
+                <p>Lo agregás al carrito</p>
+            </div>
+            <div class="card">
+                <ion-icon name="flame"></ion-icon>
+                <p>Le das al botón comprar y LISTO, ya tenes tus pedis en casa!!!!</p>
+            </div>
+        </div>
+    </div>
+    <div class="lista" id="lista">
+        <h2 class="lista__titulo">Acá va la lista de los Pédis</h2>
+        <div class="card__container">
+            <article class="card">
+                <div class="imagen"><img src="./assets/klipartz.com (1).png" alt=""></div>
+                <div class="texto">
+                    <h3>El prota pikachu</h3>
+                    <p>$1200</p>
+                    <button onclick="addToCart(this)" class="botonComprarCard">COMPRAR</button>
+                </div>
+            </article>
+            <article class="card">
+                <div class="imagen"><img src="./assets/klipartz.com (2).png" alt=""></div>
+                <div class="texto">
+                    <h3>El canguro rosita</h3>
+                    <p>$950</p>
+                    <button onclick="addToCart(this)" class="botonComprarCard">COMPRAR</button>
+                </div>
+            </article>
+            <article class="card">
+                <div class="imagen"><img src="./assets/klipartz.com (3).png" alt=""></div>
+                <div class="texto">
+                    <h3>El algodón de azúcar</h3>
+                    <p>$1100</p>
+                    <button onclick="addToCart(this)" class="botonComprarCard">COMPRAR</button>
+                </div>
+            </article>
+            <article class="card">
+                <div class="imagen"><img src="./assets/klipartz.com (4).png" alt=""></div>
+                <div class="texto">
+                    <h3>El eevee kawaii</h3>
+                    <p>$1500</p>
+                    <button onclick="addToCart(this)" class="botonComprarCard">COMPRAR</button>
+                </div>
+            </article>
+            <article class="card">
+                <div class="imagen"><img src="./assets/klipartz.com.png" alt=""></div>
+                <div class="texto">
+                    <h3>Vamo a calmarno</h3>
+                    <p>$1350</p>
+                    <button onclick="addToCart(this)" class="botonComprarCard">COMPRAR</button>
+                </div>
+            </article>
+            <article class="card">
+                <div class="imagen"><img src="./klipartz.com.png" alt=""></div>
+                <div class="texto">
+                    <h3>El señor fueguín</h3>
+                    <p>$1250</p>
+                    <button onclick="addToCart(this)" class="botonComprarCard">COMPRAR</button>
+                </div>
+            </article>
+        </div>
+    </div>
+    <script src="/index.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

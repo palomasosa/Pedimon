@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --font-family: 'Montserrat', sans-serif;
+    --color-blue: #0c4da2;
+    --color-soft-yellow: #f7de82;
+    --color-white: #f8f9fb;
+    --color-red: #ff1c1c;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+.inicio {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-soft-yellow);
+    padding: 40px 140px;
+}
+.inicio .carrito {
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    background-color: transparent;
+    border-style: none;
+    transition: 0.5s;
+}
+.inicio .carrito img {
+    width: 30px;
+}
+.inicio .carrito:hover {
+    transform: scale(1.35);
+    cursor: pointer;
+}
+
+.inicio .cantidadCompras {
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--color-red);
+    text-align: center;
+    font-size: 12px;
+    font-weight: bolder;
+    color: var(--color-white);
+    position: fixed;
+    top: 1%;
+    right: 1%;
+    z-index: 1;
+}
+
+.sidebar {
+    visibility: hidden;
+    z-index: 1;
+    width: 20%;
+    height: 100vh;
+    padding: 0px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .cerrarSidebar {
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: bold;
+    border-style: none;
+}
+.sidebar .cerrarSidebar:hover { 
+    cursor: pointer;
+}
+
+.sidebar .nombreSidebar {
+    height: 15vh;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.sidebar .productosSeleccionados {
+    width: 100%;
+    height: 70vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.sidebar .finalizarCompra {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+}
+
+.sidebar .finalizarCompra .total {
+     width: 50%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+}
+
+.sidebar .finalizarCompra .botonComprar {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar .finalizarCompra .botonComprar button {
+    padding: 2px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.sidebar .finalizarCompra .botonComprar button:hover { 
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.inicio .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+.inicio .navbar .logo {
+    width: 200px;
+    min-width: 150px;
+    justify-content: center;
+    align-items: center;
+}
+.inicio .navbar ul {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inicio .navbar ul li {
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    list-style: none;
+    margin: 0 50px 0 50px;
+    transition: 0.5s;
+}
+.inicio .navbar ul li a {
+    text-decoration: none;
+    color: var(--color-blue);
+}
+.inicio .navbar ul li:hover {
+    transform: scale(1.2);
+} 
+.inicio .conteiner__inicio {
+    width: 100%;
+    height: calc(100vh - 140px) /*140px vienen de los 100px del navbar + 40 px de padding :D*/;
+    display: flex;
+    padding-top: 120px;  
+}
+.inicio .conteiner__inicio .texto__inicio {
+    width: 50%;
+}
+.inicio .conteiner__inicio .texto__inicio img {
+    width: 100%;
+    min-width: 200px;
+}
+.inicio .conteiner__inicio .containerImagen__inicio {
+    width: 50%; 
+    position: relative;
+}
+.inicio .conteiner__inicio .containerImagen__inicio img {
+    width: 450px;
+    position: absolute;
+    top: -25px;
+    margin-left: 50px;
+}
+.inicio .conteiner__inicio .texto__inicio .texto {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+}
+.inicio .conteiner__inicio .texto__inicio .boton__atrapar {
+    margin-top: 25px;
+    width: 60%;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border-color: transparent;
+    transition: 0.5s;
+}
+
+.inicio .conteiner__inicio .texto__inicio .boton__atrapar:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.about {
+    background-color: var(--color-blue);
+    width: 100%;
+    height: 100vh;
+    padding: 40px 140px;
+}
+.about .texto {
+    width: 100%;
+    text-align: center;
+    height: 190px;
+}
+.about .texto h2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--color-soft-yellow);
+    text-transform: uppercase;
+    margin: 50px 0 20px 0;
+}
+.about .texto p {
+    font-size: 20px;
+    color: var(--color-white);
+    font-weight: 400;
+}
+.about .container__cards {
+    width: 100%;
+    height: calc(100vh - 280px) /*280px de 190px del texto + 40px de padding + 50px del margin top del h2*/;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about .container__cards .card {
+    height: 80%;
+    width: 20%;
+    margin: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.about .container__cards .card ion-icon {
+    font-size: 150px;
+    text-align: center;
+    color: var(--color-white);
+    margin-bottom: 20px;
+}
+.about .container__cards .card p {
+    font-size: 20px;
+    color: var(--color-white);
+    text-align: center;
+}
+.lista {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-white);
+    padding: 40px 140px;
+}
+.lista h2 {
+    text-align: center;
+    color: var(--color-blue);
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.lista .card__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 275px));
+    gap: 10%;
+    justify-content: center;
+}
+.lista .card__container .card {
+    margin: 80px 0px 20px 0px;
+    margin: 5%;
+    padding: 5%;
+    border-radius: 30px;
+    border: 2px solid rgb(228, 228, 228);
+    box-shadow: 2px 2px 2px 1px #c1c1c2;
+    transition: 0.5s;
+}
+
+.lista .card__container .card:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.lista .card__container .imagen {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.lista .card__container .imagen img {
+    width: auto;
+    height: 200px;
+}
+.lista .card__container .card .texto {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.lista .card__container .card .texto *{
+    margin: 10px 0px 0px 0px;
+    padding: 1%;
+}
+
+.lista .card__container .card button {
+    padding: 1%;
+    border-radius: 15px;
+    border-color: transparent;
+    color: var(--color-white);
+    width: 50%;
+    font-weight: bold;
+    background-color: var(--color-blue);
+    transition: 0.5s;
+}
+
+.lista .card__container .card button:hover {
+    background-color: var(--color-soft-yellow);
+    color: var(--color-blue);
+    cursor: pointer;
+} 
